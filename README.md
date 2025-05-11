@@ -19,7 +19,7 @@ An online library system built with React that allows users to browse books by c
 ## Tech Stack
 
 - **Frontend:** React, React Router, Redux, Redux Toolkit
-- **Styling:** CSS / Tailwind / any UI framework (based on your setup)
+- **Styling:** Tailwindcss
 - **State Management:** Redux Toolkit
 - **Routing:** React Router DOM
 
@@ -31,6 +31,6 @@ An online library system built with React that allows users to browse books by c
   - git clone https://github.com/PrajapatiVikrant/Online_Library_System.git
   - cd Online_Library_System
   - npm install
-  - npm run dev (provided localhost link where application will be run)
+  - npm run dev (this command give you localhost link where application will be run)
 
 
