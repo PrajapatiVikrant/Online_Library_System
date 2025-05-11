@@ -8,6 +8,7 @@ export default function CategoryCheckBox({category}) {
     const filterCategory = useSelector((state)=>state.FilteredCategory)
     const [checkBox,setCheckBox] = useState(false);
     const dispatch = useDispatch();
+   
 
 
 
@@ -26,10 +27,11 @@ export default function CategoryCheckBox({category}) {
        dispatch(changeCategory(filterList))
        dispatch(changeList(filterBook))
        setCheckBox(checkStatus)
+      
     }
     return (
         <div className="flex items-center gap-3 text-2xl"  >
-            <input className="w-[20px] h-[20px]" checked={checkBox} onChange={()=>handleFilter(checkBox?false:true)} type="checkbox" />
+            <input id={category} className="w-[20px] h-[20px]" checked={checkBox} onChange={()=>handleFilter(checkBox?false:true)} type="checkbox" />
             <p>{category}</p>
         </div>
     )

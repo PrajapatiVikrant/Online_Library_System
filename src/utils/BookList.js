@@ -1,4 +1,4 @@
-const BookList = [
+const BookList = localStorage.getItem("bookList")?JSON.parse(localStorage.getItem("bookList")):[
     {
       id: 1,
       title: "The Catcher in the Rye",
